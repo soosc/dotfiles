@@ -1,6 +1,6 @@
-vim/bundle
+vim/bundle/*
 !vim/bundle/.gitkeep
-vim/backups
+vim/backups/*
 !vim/backups/.gitkeep
-vim/temp
+vim/temp/*
 !vim/tmp/.gitignore

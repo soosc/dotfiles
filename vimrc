@@ -23,6 +23,7 @@ set swapfile
 set updatecount=32
 set directory=~/.vim/temp//
 set backupdir=~/.vim/backups//
+set writebackup
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
