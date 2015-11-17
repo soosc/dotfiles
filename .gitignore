@@ -3,4 +3,4 @@ vim/bundle/*
 vim/backups/*
 !vim/backups/.gitkeep
 vim/temp/*
-!vim/tmp/.gitkeep
+!vim/temp/.gitkeep
