@@ -18,6 +18,11 @@ set shiftwidth=4
 set softtabstop=4
 set ignorecase
 set smartcase
+set backup
+set swapfile
+set updatecount=32
+set directory=~/.vim/temp//
+set backupdir=~/.vim/backups//
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
