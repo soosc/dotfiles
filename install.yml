@@ -1,0 +1,24 @@
+---
+- hosts: 127.0.0.1
+  vars:
+    user: deploy
+  tasks:
+  - name: symlink directories
+    file: src=~/.dotfiles/{{ item }}
+          dest=~/.{{ item }}
+          force=yes state=link
+    with_items:
+      - vim
+      - tmux
+  - name: symlink files
+    file: src=~/.dotfiles/{{ item }}
+          dest=~/.{{ item }}
+          force=yes state=link
+    with_items:
+      - vimrc
+      - tmux.conf
+      - gemrc
+  - name: install vim plugins
+    command: vim +PluginInstall +qall
+  - name: install tmux plugins
+    command: ~/.tmux/plugins/tpm/bin/install_plugins
