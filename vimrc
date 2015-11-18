@@ -26,6 +26,9 @@ set swapfile
 set updatecount=32
 set directory=~/.vim/temp//
 set backupdir=~/.vim/backups//
+set undodir=~/.vim/undo//
+set undofile
+set undolevels=64
 set writebackup
 set textwidth=80
 set colorcolumn=+1
