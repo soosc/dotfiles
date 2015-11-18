@@ -20,12 +20,15 @@ set shiftwidth=4
 set softtabstop=4
 set ignorecase
 set smartcase
+set incsearch
 set backup
 set swapfile
 set updatecount=32
 set directory=~/.vim/temp//
 set backupdir=~/.vim/backups//
 set writebackup
+set textwidth=80
+set colorcolumn=+1
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
@@ -44,6 +47,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-colorscheme-switcher'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
 
 call vundle#end()
 filetype plugin indent on
