@@ -4,3 +4,5 @@ vim/backups/*
 !vim/backups/.gitkeep
 vim/temp/*
 !vim/temp/.gitkeep
+tmux/plugins/*
+!tmux/plugins/.gitkeep
