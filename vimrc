@@ -43,6 +43,7 @@ Plugin 'flazz/vim-colorschemes'
 " required for vim-colorscheme-switcher
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-colorscheme-switcher'
+Plugin 'vim-ruby/vim-ruby'
 
 call vundle#end()
 filetype plugin indent on
