@@ -5,10 +5,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " vim config
+set t_Co=256
+set encoding=utf-8
 set number
 set hlsearch
 set ruler
-set scrolloff=5
+set scrolloff=10
 set laststatus=2
 set history=1024
 set expandtab
@@ -37,19 +39,25 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'sjl/gundo.vim'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-surround'
+Plugin 'flazz/vim-colorschemes'
+" required for vim-colorscheme-switcher
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-colorscheme-switcher'
 
 call vundle#end()
 filetype plugin indent on
 
-" altercation/vim-colors-solarized
+" syntastic
+"let g:NERDTreeDirArrows=0
+
+" vim-colors-solarized
 syntax enable
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
+" set background=light
+" colorscheme summerfruit256
 
-" sjl/guno.vim
+" guno.vim
 " http://sjl.bitbucket.org/gundo.vim/
 nnoremap <F5> :GundoToggle<CR>
-
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
