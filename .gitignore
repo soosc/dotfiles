@@ -6,3 +6,5 @@ vim/temp/*
 !vim/temp/.gitkeep
 tmux/plugins/*
 !tmux/plugins/.gitkeep
+tmux/resurrect/*
+!tmux/resurrect/.gitkeep
