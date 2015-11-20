@@ -10,3 +10,4 @@ tmux/plugins/*
 !tmux/plugins/.gitkeep
 tmux/resurrect/*
 !tmux/resurrect/.gitkeep
+vim/.netrwhist

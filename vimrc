@@ -30,7 +30,7 @@ set undodir=~/.vim/undo//
 set undofile
 set undolevels=64
 set writebackup
-set textwidth=80
+" set textwidth=80
 set colorcolumn=+1
 
 Plugin 'scrooloose/nerdtree'
@@ -55,8 +55,11 @@ Plugin 'tpope/vim-rails'
 call vundle#end()
 filetype plugin indent on
 
+" nerdtree
+map <C-n> :NERDTreeToggle<CR>
+
 " syntastic
-"let g:NERDTreeDirArrows=0
+" let g:NERDTreeDirArrows=0
 
 " vim-colors-solarized
 syntax enable

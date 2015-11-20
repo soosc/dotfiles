@@ -18,6 +18,7 @@
       - vimrc
       - tmux.conf
       - gemrc
+      - bash_aliases
   - name: install vim plugins
     command: vim +PluginInstall +qall
   - name: install tmux plugins
