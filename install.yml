@@ -1,8 +1,15 @@
 ---
+# git submodule update --init --recursive
 - hosts: 127.0.0.1
   vars:
     user: deploy
   tasks:
+  - name: install dependencies
+    apt: name={{ item }}
+         update_cache=yes
+         state=present
+    with_items:
+      - tmux
   - name: symlink directories
     file: src=~/.dotfiles/{{ item }}
           dest=~/.{{ item }}
