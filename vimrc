@@ -5,6 +5,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " vim config
+let mapleader=","
+
 set t_Co=256
 set encoding=utf-8
 set number
@@ -13,11 +15,10 @@ set ruler
 set scrolloff=10
 set laststatus=2
 set history=1024
+" set tabstop=4
 set expandtab
-set tabstop=4
-set expandtab
-set shiftwidth=4
-set softtabstop=4
+" set shiftwidth=4
+" set softtabstop=4
 set ignorecase
 set smartcase
 set incsearch
@@ -51,6 +52,8 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-colorscheme-switcher'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
+Plugin 'ngmy/vim-rubocop'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 filetype plugin indent on
