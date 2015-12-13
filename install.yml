@@ -1,6 +1,6 @@
 ---
 # git submodule update --init --recursive
-- hosts: 127.0.0.1
+- hosts: all
   vars:
     user: deploy
   tasks:
@@ -10,6 +10,7 @@
          state=present
     with_items:
       - tmux
+    sudo: yes
   - name: symlink directories
     file: src=~/.dotfiles/{{ item }}
           dest=~/.{{ item }}

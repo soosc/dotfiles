@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ansible-playbook install.yml
+ansible-playbook -K -c local install.yml
