@@ -1,0 +1,4 @@
+new-window -n services
+split-window -h
+split-window -v 
+new-window -n editor vi
