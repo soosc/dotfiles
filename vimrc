@@ -15,10 +15,10 @@ set ruler
 set scrolloff=10
 set laststatus=2
 set history=1024
-" set tabstop=4
+set tabstop=2
 set expandtab
-" set shiftwidth=4
-" set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set ignorecase
 set smartcase
 set incsearch
@@ -75,3 +75,9 @@ colorscheme solarized
 " guno.vim
 " http://sjl.bitbucket.org/gundo.vim/
 nnoremap <F5> :GundoToggle<CR>
+
+if has("gui_running")
+  if has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
