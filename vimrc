@@ -81,3 +81,5 @@ if has("gui_running")
     set guifont=Consolas:h11:cANSI
   endif
 endif
+
+au BufRead,BufNewFile *.md setlocal textwidth=80
