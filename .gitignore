@@ -11,3 +11,4 @@ tmux/plugins/*
 tmux/resurrect/*
 !tmux/resurrect/.gitkeep
 vim/.netrwhist
+vim/plugged
