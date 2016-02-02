@@ -1,39 +1,39 @@
 set nocompatible
-filetype off
 
 call plug#begin()
-Plug 'tpope/vim-sensible'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'scrooloose/syntastic'
-Plug 'altercation/vim-colors-solarized'
-Plug 'kien/ctrlp.vim'
+
+Plug 'mileszs/ack.vim'
 Plug 'bling/vim-airline'
-Plug 'scrooloose/nerdcommenter'
-Plug 'godlygeek/tabular'
-Plug 'tpope/vim-fugitive'
-Plug 'sheerun/vim-polyglot'
-Plug 'sjl/gundo.vim'
-Plug 'ervandew/supertab'
-Plug 'tpope/vim-surround'
+Plug 'altercation/vim-colors-solarized'
 Plug 'flazz/vim-colorschemes'
+Plug 'xolox/vim-colorscheme-switcher'
+Plug 'kien/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-fugitive'
+Plug 'sjl/gundo.vim'
 " required for vim-colorscheme-switcher
 Plug 'xolox/vim-misc'
-Plug 'xolox/vim-colorscheme-switcher'
-Plug 'vim-ruby/vim-ruby'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-rails'
 Plug 'ngmy/vim-rubocop'
-Plug 'mileszs/ack.vim'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-sensible'
+Plug 'ervandew/supertab'
+Plug 'scrooloose/syntastic'
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-surround'
+Plug 'SirVer/ultisnips'
 
 call plug#end()
 
 let mapleader=","
+
 set t_Co=256
 set encoding=utf-8
 set number
 set hlsearch
-set ruler
 set scrolloff=10
-set laststatus=2
 set history=1024
 set tabstop=2
 set expandtab
@@ -51,19 +51,13 @@ set undodir=~/.vim/undo//
 set undofile
 set undolevels=64
 set writebackup
-" set textwidth=80
 set colorcolumn=+1
-
-filetype plugin indent on
+set visualbell
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
-" syntastic
-" let g:NERDTreeDirArrows=0
-
 " vim-colors-solarized
-syntax enable
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
