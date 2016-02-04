@@ -4,6 +4,7 @@ call plug#begin()
 
 Plug 'mileszs/ack.vim'
 Plug 'bling/vim-airline'
+Plug 'jlanzarotta/bufexplorer'
 Plug 'altercation/vim-colors-solarized'
 Plug 'flazz/vim-colorschemes'
 Plug 'xolox/vim-colorscheme-switcher'
@@ -11,8 +12,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
 Plug 'sjl/gundo.vim'
-" required for vim-colorscheme-switcher
-Plug 'xolox/vim-misc'
+Plug 'xolox/vim-misc' " required for vim-colorscheme-switcher
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-rails'
@@ -60,9 +60,9 @@ map <C-n> :NERDTreeToggle<CR>
 " vim-colors-solarized
 set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
-" set background=light
+" colorscheme solarized
 " colorscheme summerfruit256
+colorscheme tir_black
 
 " guno.vim
 " http://sjl.bitbucket.org/gundo.vim/
@@ -75,3 +75,16 @@ if has("gui_running")
 endif
 
 au BufRead,BufNewFile *.md setlocal textwidth=80
+
+" scrooloose/syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" kien/ctrlp.vim
+let g:ctrlp_show_hidden = 1
