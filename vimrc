@@ -53,16 +53,18 @@ set undolevels=64
 set writebackup
 set colorcolumn=+1
 set visualbell
+set relativenumber
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
 " vim-colors-solarized
 set background=dark
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 " colorscheme solarized
 " colorscheme summerfruit256
-colorscheme tir_black
+" colorscheme tir_black
+colorscheme gruvbox
 
 " guno.vim
 " http://sjl.bitbucket.org/gundo.vim/
