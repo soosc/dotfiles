@@ -4,13 +4,16 @@ call plug#begin()
 
 Plug 'mileszs/ack.vim'
 Plug 'bling/vim-airline'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'altercation/vim-colors-solarized'
 Plug 'flazz/vim-colorschemes'
 Plug 'xolox/vim-colorscheme-switcher'
 Plug 'kien/ctrlp.vim'
+Plug 'ekalinin/Dockerfile.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'sjl/gundo.vim'
 Plug 'xolox/vim-misc' " required for vim-colorscheme-switcher
 Plug 'scrooloose/nerdcommenter'
@@ -20,6 +23,7 @@ Plug 'ngmy/vim-rubocop'
 Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-sensible'
 Plug 'ervandew/supertab'
+Plug 'tpope/vim-surround'
 Plug 'scrooloose/syntastic'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-surround'
@@ -90,3 +94,6 @@ let g:syntastic_check_on_wq = 0
 
 " kien/ctrlp.vim
 let g:ctrlp_show_hidden = 1
+
+" airblade/vim-gitgutter 
+let g:gitgutter_max_signs = 500  " default value
