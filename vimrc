@@ -28,6 +28,7 @@ Plug 'tpope/vim-sensible'
 " Plug 'ervandew/supertab'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/syntastic'
+Plug 'dhruvasagar/vim-table-mode'
 Plug 'godlygeek/tabular'
 " Plug 'SirVer/ultisnips'
 
@@ -128,3 +129,6 @@ let g:gitgutter_max_signs = 500  " default value
 " autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 " autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 " autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" dhruvasagar/vim-table-mode
+

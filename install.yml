@@ -1,9 +1,5 @@
 ---
-# git submodule update --init --recursive
 - hosts: localhost
-  connection: local
-  vars:
-    user: deploy
   tasks:
   - name: symlink directories
     file: src=~/.dotfiles/{{ item }}
@@ -21,6 +17,8 @@
       - tmux.conf
       - gemrc
       - bash_aliases
+  - name: submodules
+    shell: git submodule update --init --recursive chdir=~/.dotfiles
   - name: install vim plugins
     command: vim +PluginInstall +qall
   - name: install tmux plugins
