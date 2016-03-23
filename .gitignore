@@ -13,3 +13,4 @@ tmux/resurrect/*
 vim/.netrwhist
 vim/plugged/*
 !vim/plugged/.gitkeep
+*.retry
