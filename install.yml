@@ -23,3 +23,4 @@
     command: vim +PlugInstall +qall
   - name: install tmux plugins
     command: ~/.tmux/plugins/tpm/bin/install_plugins
+      environment: TMUX_PLUGIN_MANAGER_PATH=/home/deploy/.tmux/plugins
