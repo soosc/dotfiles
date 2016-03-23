@@ -20,15 +20,15 @@ Plug 'xolox/vim-misc' " required for vim-colorscheme-switcher
 " Plug 'Shougo/neocomplete.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'tpope/vim-rails'
-Plug 'ngmy/vim-rubocop'
-Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'ngmy/vim-rubocop', { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-sensible'
 " Plug 'rstacruz/sparkup'
 " Plug 'ervandew/supertab'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/syntastic'
-Plug 'dhruvasagar/vim-table-mode'
+" Plug 'dhruvasagar/vim-table-mode'
 Plug 'godlygeek/tabular'
 " Plug 'SirVer/ultisnips'
 
