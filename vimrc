@@ -132,3 +132,4 @@ let g:gitgutter_max_signs = 500  " default value
 
 " dhruvasagar/vim-table-mode
 
+let g:plug_threads = 3
