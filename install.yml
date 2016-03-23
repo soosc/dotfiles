@@ -20,6 +20,6 @@
   - name: submodules
     shell: git submodule update --init --recursive chdir=~/.dotfiles
   - name: install vim plugins
-    command: vim +PluginInstall +qall
+    command: vim +PlugInstall +qall
   - name: install tmux plugins
     command: ~/.tmux/plugins/tpm/bin/install_plugins
