@@ -1,5 +1,5 @@
 alias ap='ansible-playbook'
-alias ua='sudo apt-get update && sudo apt-get dist-upgrade -y'
+alias ua='sudo apt update && sudo apt dist-upgrade -y'
 alias k='keychain --clear --nogui ~/.ssh/id_rsa'
 alias t='tmux new-session -As tdefault'
 alias t='tmux new'
