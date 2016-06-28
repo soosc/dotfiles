@@ -4,8 +4,9 @@ call plug#begin()
 
 Plug 'mileszs/ack.vim'
 Plug 'bling/vim-airline'
+Plug 'asciidoc/vim-asciidoc'
 Plug 'flazz/vim-colorschemes'
-" Plug 'xolox/vim-colorscheme-switcher'
+Plug 'xolox/vim-colorscheme-switcher'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'EinfachToll/DidYouMean'
@@ -54,16 +55,21 @@ set colorcolumn=+1
 set visualbell
 set relativenumber
 
+" vim-asciidoc
+au BufRead,BufNewFile *.asciidoc.adoc.asc set syntax=asciidoc
+au BufRead,BufNewFile *.asciidoc.adoc.asc setlocal textwidth=80
+
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
 " vim-colors-solarized
-set background=dark
+" set background=dark
 " let g:solarized_termcolors=256
 " colorscheme solarized
-" colorscheme summerfruit256
+
 " colorscheme tir_black
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme 256_noir
 
 " guno.vim
 " http://sjl.bitbucket.org/gundo.vim/
