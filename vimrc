@@ -56,8 +56,10 @@ set visualbell
 set relativenumber
 
 " vim-asciidoc
-au BufRead,BufNewFile *.asciidoc.adoc.asc set syntax=asciidoc
-au BufRead,BufNewFile *.asciidoc.adoc.asc setlocal textwidth=80
+au BufRead,BufNewFile *.adoc setlocal syntax=asciidoc
+au BufRead,BufNewFile *.adoc setlocal textwidth=80
+au BufRead,BufNewFile *.adoc setlocal spell
+au BufRead,BufNewFile *.md setlocal spell
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
