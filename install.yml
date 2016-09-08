@@ -26,3 +26,14 @@
     command: ~/.tmux/plugins/tpm/bin/install_plugins
     environment: 
       TMUX_PLUGIN_MANAGER_PATH: ~/.tmux/plugins/
+
+  - name: clone rbenv
+    git: repo=https://github.com/rbenv/rbenv.git
+         dest=~/.rbenv
+
+  - name: clone ruby-build
+    git: repo=https://github.com/rbenv/ruby-build.git
+         dest=~/.rbenv/plugins/ruby-build
+
+  - name: install virtualenv for current user
+    pip: name=virtualenv

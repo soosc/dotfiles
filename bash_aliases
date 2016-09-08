@@ -1,6 +1,5 @@
 alias ap='ansible-playbook'
 alias ua='sudo apt update && sudo apt dist-upgrade -y && sudo apt-get autoclean && sudo apt-get autoremove -y'
-alias k='keychain --clear --nogui ~/.ssh/id_rsa'
 alias t='tmux new-session -As tdefault'
 alias ta='tmux attach'
 alias trails='tmux new-session -As trails'
