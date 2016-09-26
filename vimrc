@@ -55,22 +55,17 @@ set colorcolumn=+1
 set visualbell
 set relativenumber
 
-" vim-asciidoc
-au BufRead,BufNewFile *.adoc setlocal syntax=asciidoc
+" indents
+au BufRead,BufNewFile *.adoc setlocal syntax=asciidoc shiftwidth=4 spell
 au BufRead,BufNewFile *.adoc setlocal textwidth=80
-au BufRead,BufNewFile *.adoc setlocal spell
-au BufRead,BufNewFile *.md setlocal spell
+au BufRead,BufNewFile *.erb setlocal shiftwidth=4
+au BufRead,BufNewFile *.html setlocal shiftwidth=4
+au BufRead,BufNewFile *.js setlocal shiftwidth=4
+au BufRead,BufNewFile *.md setlocal shiftwidth=4 spell
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
-" vim-colors-solarized
-" set background=dark
-" let g:solarized_termcolors=256
-" colorscheme solarized
-
-" colorscheme tir_black
-" colorscheme gruvbox
 colorscheme 256_noir
 
 " guno.vim
