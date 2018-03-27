@@ -37,3 +37,9 @@
 
   - name: install virtualenv for current user
     pip: name=virtualenv
+
+  - name: copy
+    copy:
+      src: nvm.sh
+      dest: ~/.nvm
+

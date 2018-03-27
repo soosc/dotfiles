@@ -7,3 +7,8 @@ alias ts='tmux kill-server'
 alias r='bundle exec rails'
 alias rs='bundle exec rails server'
 alias rc='bundle exec rails console'
+
+# docker
+alias dsa='sudo docker stop $(sudo docker ps -aq)'
+alias drma='sudo docker rm $(sudo docker ps -qa)'
+alias drmia='sudo docker rmi $(sudo docker images -q)'
