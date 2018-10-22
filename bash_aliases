@@ -1,3 +1,7 @@
+alias ll='ls -la'
+alias lm='ls -l --block-size=M'
+alias lg='ls -l --block-size=G'
+alias duh='du -h'
 alias ap='ansible-playbook'
 alias ua='sudo apt update && sudo apt dist-upgrade -y && sudo apt-get autoclean && sudo apt-get autoremove -y'
 alias t='tmux new-session -As tdefault'
