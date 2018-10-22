@@ -63,6 +63,12 @@ au BufRead,BufNewFile *.html setlocal shiftwidth=4
 au BufRead,BufNewFile *.js setlocal shiftwidth=4
 au BufRead,BufNewFile *.md setlocal shiftwidth=4 textwidth=80 spell
 
+" flazz/vim-colorschemes
+let g:colorscheme_switcher_define_mappings = 0
+
+nnoremap <silent> <F7> :PrevColorScheme<CR>
+nnoremap <silent> <F8> :NextColorScheme<CR>
+
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
