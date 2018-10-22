@@ -1,0 +1,9 @@
+[user]
+	name = Andrew Bartel
+	email = andrew@sooscdev.com
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=600
+[core]
+	editor = vi
