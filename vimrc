@@ -74,7 +74,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 colorscheme 256_noir
 
-" guno.vim
+" gundo.vim
 " http://sjl.bitbucket.org/gundo.vim/
 nnoremap <F5> :GundoToggle<CR>
 
@@ -83,8 +83,6 @@ if has("gui_running")
     set guifont=Consolas:h11:cANSI
   endif
 endif
-
-au BufRead,BufNewFile *.md setlocal textwidth=80
 
 " kien/ctrlp.vim
 let g:ctrlp_show_hidden = 1
