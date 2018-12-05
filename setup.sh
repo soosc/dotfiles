@@ -2,7 +2,7 @@
 
 dotfiles_dir=~/.dotfiles
 
-pyenv_version=v1.2.7
+pyenv_version=v1.2.8
 nvm_version=v0.33.11
 
 export TMUX_PLUGIN_MANAGER_PATH=~/.tmux/plugins/
