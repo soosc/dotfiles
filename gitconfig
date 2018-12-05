@@ -7,3 +7,17 @@
 	helper = cache --timeout=600
 [core]
 	editor = vi
+[alias]
+  a = add --all
+  cam = commit -am
+  cem = commit --allow-empty -m
+  d = diff
+  s = status -s
+  cl = clone
+  cm = commit
+  r = reset
+  r1 = reset HEAD^
+  rh = reset --hard
+  sl = stash list
+  sa = stash apply
+  ss = stash save
