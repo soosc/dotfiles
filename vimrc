@@ -60,7 +60,7 @@ au BufRead,BufNewFile *.adoc setlocal syntax=asciidoc shiftwidth=4 spell
 au BufRead,BufNewFile *.adoc setlocal textwidth=80
 au BufRead,BufNewFile *.erb setlocal shiftwidth=4
 au BufRead,BufNewFile *.html setlocal shiftwidth=4
-au BufRead,BufNewFile *.js setlocal shiftwidth=4
+au BufRead,BufNewFile *.js setlocal shiftwidth=2
 au BufRead,BufNewFile *.md setlocal shiftwidth=4 textwidth=80 spell
 
 " flazz/vim-colorschemes
