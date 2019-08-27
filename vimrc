@@ -1,6 +1,6 @@
 set nocompatible
 
-call plug#begin()
+call plug#begin('~/.vim/plugged')
 
 Plug 'mileszs/ack.vim'
 Plug 'bling/vim-airline'

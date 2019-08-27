@@ -16,3 +16,6 @@ alias rc='bundle exec rails console'
 alias dsa='sudo docker stop $(sudo docker ps -aq)'
 alias drma='sudo docker rm $(sudo docker ps -qa)'
 alias drmia='sudo docker rmi $(sudo docker images -q)'
+
+# centos
+alias vi='vim'
