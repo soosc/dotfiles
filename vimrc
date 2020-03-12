@@ -56,12 +56,16 @@ set visualbell
 set relativenumber
 
 " indents
-au BufRead,BufNewFile *.adoc setlocal syntax=asciidoc shiftwidth=4 spell
-au BufRead,BufNewFile *.adoc setlocal textwidth=80
-au BufRead,BufNewFile *.erb setlocal shiftwidth=4
-au BufRead,BufNewFile *.html setlocal shiftwidth=4
-au BufRead,BufNewFile *.js setlocal shiftwidth=2
-au BufRead,BufNewFile *.md setlocal shiftwidth=4 textwidth=80 spell
+filetype plugin indent on
+
+autocmd FileType adoc setlocal syntax=asciidoc shiftwidth=4 spell
+autocmd FileType adoc setlocal textwidth=80
+autocmd FileType erb setlocal shiftwidth=4
+autocmd FileType html setlocal shiftwidth=4
+autocmd FileType js setlocal shiftwidth=2
+autocmd FileType md setlocal shiftwidth=4 textwidth=80 spell
+autocmd FileType yml setlocal tabstop=2 softtabstop=2 shiftwidth=2 spell
+autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 spell
 
 " flazz/vim-colorschemes
 let g:colorscheme_switcher_define_mappings = 0

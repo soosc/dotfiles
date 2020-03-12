@@ -19,3 +19,5 @@ alias drmia='sudo docker rmi $(sudo docker images -q)'
 
 # centos
 alias vi='vim'
+
+alias se='sudo -E'
