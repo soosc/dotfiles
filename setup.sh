@@ -2,7 +2,7 @@
 
 dotfiles_dir=~/
 dotfiles_dir=${dotfiles_dir%/}
-dotfiles_dir=${dotfiles_dir}.dotfiles
+dotfiles_dir=${dotfiles_dir}/.dotfiles
 
 pyenv_version=v1.2.8
 nvm_version=v0.33.11
