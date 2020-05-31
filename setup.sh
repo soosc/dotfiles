@@ -30,25 +30,25 @@ ln -sf $dotfiles_dir/tmux.conf ~/.tmux.conf
 ln -sf $dotfiles_dir/gitconfig ~/.gitconfig
 ln -sf $dotfiles_dir/gemrc ~/.gemrc
 
-#sudo apt update
-#sudo apt install -y \
-#  tmux \
-#  vim-nox \
-#  build-essential \
-#  curl \
-#  python-pip
-#sudo apt build-dep -y ruby2.5
-
-sudo yum upgrade
-sudo yum install -y \
+sudo apt update
+sudo apt install -y \
   tmux \
-  python36-pip \
-  curl
-sudo yum groupinstall -y 'Development Tools'
-sudo yum install -y \
-  git-core zlib zlib-devel gcc-c++ patch readline \
-  readline-devel libyaml-devel libffi-devel openssl-devel \
-  make bzip2 autoconf automake libtool bison curl sqlite-devel
+  vim-nox \
+  build-essential \
+  curl \
+  python-pip
+sudo apt build-dep -y ruby2.5
+
+#sudo yum upgrade
+#sudo yum install -y \
+#  tmux \
+#  python36-pip \
+#  curl
+#sudo yum groupinstall -y 'Development Tools'
+#sudo yum install -y \
+#  git-core zlib zlib-devel gcc-c++ patch readline \
+#  readline-devel libyaml-devel libffi-devel openssl-devel \
+#  make bzip2 autoconf automake libtool bison curl sqlite-devel
 
 git submodule update --init --recursive chdir=$dotfiles_dir
 
