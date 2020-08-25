@@ -1,21 +1,20 @@
 set nocompatible
 
+let $MYVIMRC='C:\Users\Andrew\Documents\_vimrc'
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'mileszs/ack.vim'
 Plug 'bling/vim-airline'
-Plug 'asciidoc/vim-asciidoc'
 Plug 'flazz/vim-colorschemes'
 Plug 'xolox/vim-colorscheme-switcher'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Raimondi/delimitMate'
+Plug 'Raimondi/delimitMate' " auto closing params
 Plug 'EinfachToll/DidYouMean'
-Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-Plug 'sjl/gundo.vim'
+Plug 'easymotion/vim-easymotion' " leader leader character; quick search
+Plug 'airblade/vim-gitgutter' "show git diffs
 Plug 'xolox/vim-misc' " required for vim-colorscheme-switcher
-Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter' " leader cc; commends line of code
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'ngmy/vim-rubocop', { 'for': 'ruby' }
@@ -23,7 +22,7 @@ Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/syntastic'
-Plug 'godlygeek/tabular'
+Plug 'godlygeek/tabular' " align text
 
 call plug#end()
 
@@ -67,6 +66,8 @@ autocmd FileType md setlocal shiftwidth=4 textwidth=80 spell
 autocmd FileType yml setlocal tabstop=2 softtabstop=2 shiftwidth=2 spell
 autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2 spell
 
+au BufRead,BufNewFile *.adoc setlocal spell linebreak
+
 " flazz/vim-colorschemes
 let g:colorscheme_switcher_define_mappings = 0
 
@@ -76,11 +77,7 @@ nnoremap <silent> <F8> :NextColorScheme<CR>
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
-colorscheme 256_noir
-
-" gundo.vim
-" http://sjl.bitbucket.org/gundo.vim/
-nnoremap <F5> :GundoToggle<CR>
+colorscheme astronaut
 
 if has("gui_running")
   if has("gui_win32")
