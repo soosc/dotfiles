@@ -12,7 +12,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate' " auto closing params
 Plug 'EinfachToll/DidYouMean'
 Plug 'easymotion/vim-easymotion' " leader leader character; quick search
-Plug 'airblade/vim-gitgutter' "show git diffs
+Plug 'airblade/vim-gitgutter', {'branch':'main'} "show git diffs
 Plug 'xolox/vim-misc' " required for vim-colorscheme-switcher
 Plug 'scrooloose/nerdcommenter' " leader cc; commends line of code
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
