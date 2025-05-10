@@ -24,5 +24,4 @@ ln -sf $dotfiles_dir/tmux ~/.tmux
 ln -sf $dotfiles_dir/tmux.conf ~/.tmux.conf
 ln -sf $dotfiles_dir/gitconfig ~/.gitconfig
 ln -sf $dotfiles_dir/gemrc ~/.gemrc
-
-
+ln -sf $dotfiles_dir/zshrc ~/.zshrc
