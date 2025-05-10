@@ -77,7 +77,7 @@ nnoremap <silent> <F8> :NextColorScheme<CR>
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
-colorscheme astronaut
+colorscheme alduin
 
 if has("gui_running")
   if has("gui_win32")
