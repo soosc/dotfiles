@@ -1,1 +1,6 @@
+---
 install: --no-document
+update: --no-document
+gem: --no-document
+:concurrent_downloads: 8
+:verbose: false
