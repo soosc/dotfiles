@@ -1,7 +1,5 @@
 set nocompatible
 
-let $MYVIMRC='C:\Users\Andrew\Documents\_vimrc'
-
 call plug#begin('~/.vim/plugged')
 
 Plug 'mileszs/ack.vim'

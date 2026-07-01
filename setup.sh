@@ -14,12 +14,15 @@ else
   echo "Homebrew is already installed."
 fi
 
-rm -rf ~/.vim ~/.vimrc ~/.tmux ~/.tmux.conf ~/.gitconfig ~/.gemrc ~/.rbenv ~/.pyenv ~/.nvm
+rm -rf ~/.vim ~/.vimrc ~/.config/nvim ~/.tmux ~/.tmux.conf ~/.gitconfig ~/.gemrc ~/.rbenv ~/.pyenv ~/.nvm
 
-brew install rbenv ruby-build pyenv nvm tmux
+brew install rbenv ruby-build pyenv nvm tmux neovim
+
+mkdir -p ~/.config
 
 ln -sf $dotfiles_dir/vim ~/.vim
 ln -sf $dotfiles_dir/vimrc ~/.vimrc
+ln -sf $dotfiles_dir/nvim ~/.config/nvim
 ln -sf $dotfiles_dir/tmux ~/.tmux
 ln -sf $dotfiles_dir/tmux.conf ~/.tmux.conf
 ln -sf $dotfiles_dir/gitconfig ~/.gitconfig
