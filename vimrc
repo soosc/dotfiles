@@ -20,6 +20,7 @@ Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'godlygeek/tabular' " align text
+Plug 'Mofiqul/dracula.nvim' " neovim-only dracula colorscheme
 
 call plug#end()
 
@@ -74,7 +75,15 @@ nnoremap <silent> <F8> :NextColorScheme<CR>
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
-colorscheme alduin
+" Neovim gets dracula.nvim; Vim keeps alduin. Load via the Lua module because
+" flazz/vim-colorschemes also ships a (broken) colors/dracula.vim that would
+" otherwise win the :colorscheme name lookup.
+if has('nvim')
+  set termguicolors
+  lua require('dracula').load()
+else
+  colorscheme alduin
+endif
 
 if has("gui_running")
   if has("gui_win32")

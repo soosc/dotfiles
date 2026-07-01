@@ -6,4 +6,3 @@ vim.cmd([[
   let &packpath = &runtimepath
   source ~/.vimrc
 ]])
-
