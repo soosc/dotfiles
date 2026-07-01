@@ -19,7 +19,6 @@ Plug 'ngmy/vim-rubocop', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
-Plug 'scrooloose/syntastic'
 Plug 'godlygeek/tabular' " align text
 
 call plug#end()
