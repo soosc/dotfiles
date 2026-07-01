@@ -6,10 +6,6 @@ vim/temp/*
 !vim/temp/.gitkeep
 vim/undo/*
 !vim/undo/.gitkeep
-tmux/plugins/*
-!tmux/plugins/.gitkeep
-tmux/resurrect/*
-!tmux/resurrect/.gitkeep
 vim/.netrwhist
 vim/plugged/*
 !vim/plugged/.gitkeep
